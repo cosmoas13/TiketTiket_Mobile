@@ -68,7 +68,8 @@ Wait till the application is installed and run into your device. Now, you can ex
 
 ## Screenshots
 
-<img src="docs/screenshots/screenshots.png" />
+![Google Pixel 2 - 1](https://user-images.githubusercontent.com/29488803/77260480-dfa3eb00-6cba-11ea-9bc5-05000b7592f9.png)
+
 
 ## Built With
 
