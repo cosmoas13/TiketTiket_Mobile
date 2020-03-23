@@ -1,6 +1,13 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
+  ikon: {
+    height: 55,
+    width: 55,
+    resizeMode: "contain",
+    borderRadius: 10,
+    marginTop: 10
+  },
   imgKota: {
     borderRadius: 5,
     resizeMode: "cover"
@@ -95,16 +102,21 @@ export default StyleSheet.create({
   },
   txtRute1: {
     paddingLeft: 5,
+    paddingTop: 80,
+    position: "absolute",
     color: "#fff",
     textShadowColor: "#000",
     textShadowOffset: {
       width: 1,
       height: 4
     },
-    textShadowRadius: 5
+    textShadowRadius: 5,
+    fontSize: 12
   },
   txtRute2: {
     paddingLeft: 10,
+    paddingTop: 80,
+    position: "absolute",
     color: "#fff",
     textShadowColor: "#000",
     textShadowOffset: {
@@ -114,8 +126,9 @@ export default StyleSheet.create({
     textShadowRadius: 5
   },
   txtRute3: {
-    paddingLeft: 20,
+    paddingTop: 80,
     color: "#fff",
+    position: "absolute",
     textShadowColor: "#000",
     textShadowOffset: {
       width: 1,

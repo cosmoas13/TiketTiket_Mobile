@@ -6,14 +6,7 @@ export default class MyComponent extends React.Component {
   render() {
     return (
       <Appbar.Header theme={theme}>
-        {/* <Appbar.Action icon={Logo} color="#fff" size={100} /> */}
-        <Appbar.Content title="TiketTiket" color="#ffb74d" />
-        <Appbar.Action
-          icon="account"
-          title="Hi Kevin"
-          color="#ffb74d"
-          onPress={this._handleMore}
-        />
+        <Appbar.Content title="Tiketku" color="#fff" />
       </Appbar.Header>
     );
   }
@@ -24,6 +17,6 @@ const theme = {
 
   colors: {
     ...DefaultTheme.colors,
-    primary: "rgb(246,247,251)"
+    primary: "#ffA74d"
   }
 };

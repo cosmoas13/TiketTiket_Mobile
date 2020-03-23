@@ -1,8 +1,8 @@
 import React from "react";
 
-import { BottomNavigation, Text } from "react-native-paper";
+import { BottomNavigation, DefaultTheme } from "react-native-paper";
 import Home from "../bottom/home";
-import Message from "../bottom/message";
+import Message from "../bottom/ticket";
 import Profile from "../bottom/profile";
 
 export default class MyComponent extends React.Component {
@@ -10,7 +10,7 @@ export default class MyComponent extends React.Component {
     index: 0,
     routes: [
       { key: "home", title: "Home", icon: "home" },
-      { key: "message", title: "Inbox", icon: "message" },
+      { key: "ticket", title: "My Ticket", icon: "ticket" },
       { key: "profile", title: "Profile", icon: "account" }
     ]
   };
@@ -19,13 +19,14 @@ export default class MyComponent extends React.Component {
 
   _renderScene = BottomNavigation.SceneMap({
     home: Home,
-    message: Message,
+    ticket: Message,
     profile: Profile
   });
 
   render() {
     return (
       <BottomNavigation
+        theme={theme}
         navigationState={this.state}
         onIndexChange={this._handleIndexChange}
         renderScene={this._renderScene}
@@ -33,3 +34,12 @@ export default class MyComponent extends React.Component {
     );
   }
 }
+
+const theme = {
+  ...DefaultTheme,
+
+  colors: {
+    ...DefaultTheme.colors,
+    primary: "rgb(246,247,251)"
+  }
+};

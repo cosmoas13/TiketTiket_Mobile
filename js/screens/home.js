@@ -1,18 +1,15 @@
 import React from "react";
-import AppBar from "../components/AppBar.Header";
 import BottomNav from "../components/BottomNavigation";
+import AppBar from "../components/AppBar.Header";
+import { Provider as PaperProvider } from "react-native-paper";
 
 export default class MyComponent extends React.Component {
-  state = {
-    text: ""
-  };
-
   render() {
     return (
-      <>
-        <AppBar />
+      <PaperProvider>
+        {/* <AppBar /> */}
         <BottomNav />
-      </>
+      </PaperProvider>
     );
   }
 }
