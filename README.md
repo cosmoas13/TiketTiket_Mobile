@@ -68,7 +68,7 @@ Wait till the application is installed and run into your device. Now, you can ex
 
 ## Screenshots
 
-![tikettiketv1](https://user-images.githubusercontent.com/29488803/77346912-8fd02d00-6d69-11ea-8994-4447c70ede94.png)
+![tikettiketv2](https://user-images.githubusercontent.com/29488803/77458896-7abed100-6e31-11ea-8175-884f64ae12f5.png)
 
 ## Built With
 
