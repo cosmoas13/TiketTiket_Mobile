@@ -64,12 +64,11 @@ And for Android :
 
 `npm run android`
 
-Wait till the application is installed and run into your device. Now, you can explore coHyPe and its features. Enjoy!
+Wait till the application is installed and run into your device. Now, you can explore TiketTiket and its features. Enjoy!
 
 ## Screenshots
 
-![Google Pixel 2 - 1](https://user-images.githubusercontent.com/29488803/77260480-dfa3eb00-6cba-11ea-9bc5-05000b7592f9.png)
-
+![tikettiketv2](https://user-images.githubusercontent.com/29488803/77458896-7abed100-6e31-11ea-8175-884f64ae12f5.png)
 
 ## Built With
 
