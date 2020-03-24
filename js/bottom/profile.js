@@ -9,7 +9,6 @@ export default class MyComponent extends React.Component {
     return (
       <>
         <AppBar />
-
         <View
           style={{
             flexDirection: "column",

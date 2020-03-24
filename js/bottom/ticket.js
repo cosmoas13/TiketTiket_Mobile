@@ -21,14 +21,15 @@ export default class MyComponent extends React.Component {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 5,
-              elevation: 1
+              borderRadius: 5,
+              borderWidth: 1,
+              borderColor: "#ffA74d"
             }}
           >
             <View
               style={{
                 flexDirection: "row",
                 padding: 10,
-
                 alignItems: "center",
                 justifyContent: "center",
                 borderRadius: 5
@@ -89,14 +90,15 @@ export default class MyComponent extends React.Component {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 5,
-              elevation: 1
+              borderRadius: 5,
+              borderWidth: 1,
+              borderColor: "#ffA74d"
             }}
           >
             <View
               style={{
                 flexDirection: "row",
                 padding: 10,
-
                 alignItems: "center",
                 justifyContent: "center",
                 borderRadius: 5
@@ -157,7 +159,8 @@ export default class MyComponent extends React.Component {
               alignItems: "center",
               justifyContent: "center",
               borderRadius: 5,
-              elevation: 1
+              borderWidth: 1,
+              borderColor: "#ffA74d"
             }}
           >
             <View

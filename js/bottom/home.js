@@ -12,7 +12,7 @@ export default class MyComponent extends React.Component {
   render() {
     return (
       <>
-        <AppBar />
+        <AppBar navigation={this.props.navigation} />
         <ScrollView showsVerticalScrollIndicator={false}>
           {/* Background */}
           <View theme={theme}>
@@ -38,8 +38,7 @@ export default class MyComponent extends React.Component {
               >
                 <View style={styles.flex3}>
                   <Card
-                    // onPress={() => this.props.navigation.navigate("Train")}
-                    onPress={() => console.log("Pressed")}
+                    onPress={() => this.props.navigation.navigate("Train")}
                     style={{
                       backgroundColor: "white",
                       height: 75,

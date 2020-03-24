@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BottomNavigation, DefaultTheme } from "react-native-paper";
 import Home from "../bottom/home";
 import Message from "../bottom/ticket";
@@ -17,11 +16,16 @@ export default class MyComponent extends React.Component {
 
   _handleIndexChange = index => this.setState({ index });
 
-  _renderScene = BottomNavigation.SceneMap({
-    home: Home,
-    ticket: Message,
-    profile: Profile
-  });
+  renderScene = ({ route, navigation }) => {
+    switch (route.key) {
+      case "home":
+        return <Home navigation={this.props.navigation} />;
+      case "ticket":
+        return <Message navigation={this.props.navigation} />;
+      case "profile":
+        return <Profile navigation={this.props.navigation} />;
+    }
+  };
 
   render() {
     return (
@@ -29,7 +33,7 @@ export default class MyComponent extends React.Component {
         theme={theme}
         navigationState={this.state}
         onIndexChange={this._handleIndexChange}
-        renderScene={this._renderScene}
+        renderScene={this.renderScene}
       />
     );
   }

@@ -6,7 +6,12 @@ export default class MyComponent extends React.Component {
   render() {
     return (
       <Appbar.Header theme={theme}>
-        <Appbar.Content title="Profil" color="#fff" />
+        <Appbar.Action
+          icon="close"
+          color="#fff"
+          onPress={() => this.props.navigation.navigate("Home")}
+        />
+        <Appbar.Content title="Login" color="#fff" />
       </Appbar.Header>
     );
   }
